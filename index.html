@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TermLab ⚡ Interactive Lab for Terminal Skills</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/icons/favicon-terminal.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/themes/introjs-modern.css">
+</head>
+<body>
+    <div class="container">
+        <div class="terminal" data-intro="TermLab'e hoş geldiniz! Bu interaktif terminal ile Linux komutlarını öğrenebilirsiniz." data-step="1">
+            <div class="terminal-header" data-intro="Bu terminal başlığı. Sağ üstteki butonlarla pencereyi kontrol edebilirsiniz." data-step="2">
+                <div class="terminal-buttons" data-intro="Kırmızı: Kapat, Sarı: Küçült, Yeşil: Tam Ekran" data-step="3">
+                    <span class="terminal-button close"></span>
+                    <span class="terminal-button minimize"></span>
+                    <span class="terminal-button maximize"></span>
+                </div>
+                <div class="terminal-title">termlab</div>
+            </div>
+            <div class="terminal-content">
+                <div id="output"></div>
+                <div id="input-container" data-intro="Buraya komutlarınızı yazabilirsiniz. 'help' yazarak mevcut komutları görebilirsiniz." data-step="4">
+                    <div class="input-line">
+                        <span class="prompt" data-intro="Bu prompt size hangi dizinde olduğunuzu gösterir." data-step="5">guest@termlab:~$</span>
+                        <input type="text" id="command-input" autofocus>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="credentials" data-intro="Projenin GitHub sayfasına ve sosyal medya hesaplarına buradan ulaşabilirsiniz." data-step="6">
+            <p>Created by <a href="https://github.com/furkanturandev" target="_blank">Furkan Turan</a> with 
+                <a href="https://www.cursor.com/" target="_blank">Cursor IDE</a>
+                Copyright © 2025
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/furkanturandev" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/furkanturandev" target="_blank">LinkedIn</a>
+            </div><br>
+            <p><a href="https://github.com/furkanturandev/termlab" target="_blank">Source Code</a></p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <script src="js/terminal.js"></script>
+</body>
+</html> 
